@@ -1,0 +1,28 @@
+Pasos para conectarse a la base de datos en Supabase desde PostgreSQL
+
+1-Abrir PostgreSQL
+2-Ir a PSQL Tool Workspace
+3-Ingresar los siguientes datos:
+
+Server Name: PeluchesTeam
+Host name/address: aws-0-us-east-2.pooler.supabase.com
+Port: 5432
+Database: postgres
+User: postgres.qvqpeccncxkkeaxiaphv
+Password: PeluchesPeluchon1
+
+4-Darle a Connect & Open PSQL
+
+En la terminal ingresar el comando \dt para ver las tablas creadas
+
+Con comando: psql -h aws-0-us-east-2.pooler.supabase.com -p 5432 -d postgres -U postgres.qvqpeccncxkkeaxiaphv
+
+========================================================================================
+
+Información para conexión via URI
+
+postgresql://postgres:PeluchesPeluchon1@db.qvqpeccncxkkeaxiaphv.supabase.co:5432/postgres
+host: db.qvqpeccncxkkeaxiaphv.supabase.co
+port: 5432
+database: postgres
+user: postgres
