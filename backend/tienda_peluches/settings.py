@@ -19,7 +19,6 @@ INSTALLED_APPS = [
     'rest_framework', 
     'tienda',  
     'corsheaders',
-    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +57,7 @@ WSGI_APPLICATION = 'tienda_peluches.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'PeluchesTeam',         # ← pon el nombre real aquí
+        'NAME': 'postgres',         # ← pon el nombre real aquí
         'USER': 'postgres.qvqpeccncxkkeaxiaphv',       # ← tu usuario Supabase
         'PASSWORD': 'PeluchesPeluchon1',     # ← tu contraseña
         'HOST': 'aws-0-us-east-2.pooler.supabase.com',      # ← host Supabase
