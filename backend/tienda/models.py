@@ -1,5 +1,14 @@
 from django.db import models
 
+class Administrador(models.Model):
+    id_administrador = models.AutoField(primary_key=True)
+    nombre = models.CharField(max_length=50)
+    correo = models.EmailField(unique=True)
+    contraseña = models.CharField(max_length=50)
+    
+    def __str__(self):
+        return self.nombre
+
 class Cliente(models.Model):
     id_cliente = models.AutoField(primary_key=True)
     nombre = models.CharField(max_length=50)
