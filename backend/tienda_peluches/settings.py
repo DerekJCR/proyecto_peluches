@@ -58,11 +58,11 @@ WSGI_APPLICATION = 'tienda_peluches.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'peluches_db',       # Nombre de la base en Yugabyte
-        'USER': 'peluche1',          # Usuario (depende del clúster)
-        'PASSWORD': 'peluchebonito',
-        'HOST': 'localhost',         # O el host en la nube
-        'PORT': '5433',              # Puerto de Yugabyte por defecto
+        'NAME': 'PeluchesTeam',         # ← pon el nombre real aquí
+        'USER': 'postgres.qvqpeccncxkkeaxiaphv',       # ← tu usuario Supabase
+        'PASSWORD': 'PeluchesPeluchon1',     # ← tu contraseña
+        'HOST': 'aws-0-us-east-2.pooler.supabase.com',      # ← host Supabase
+        'PORT': '5432',                      # ← puerto (normalmente 5432)
     }
 }
 
