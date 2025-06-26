@@ -1,11 +1,12 @@
+// src/app/components/navbar/navbar.component.ts
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
-  imports: [],
+  standalone: true,
+  imports: [RouterModule],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss'
+  styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent {
-
-}
+export class NavbarComponent { }
