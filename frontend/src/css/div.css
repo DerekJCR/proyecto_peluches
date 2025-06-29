@@ -1,0 +1,117 @@
+/***HERNÁNDEZ TORRES CARLOS ADRIÁN**4CV1**17/06/2024***/
+div.logo {
+	width: 1200px;
+	height: 160px;
+	margin: auto;
+}
+
+div.cajamenu{
+	width: 1200px;
+	height: 50px;
+	margin:auto;
+}
+
+div.caja{
+	width: 1200px;
+	height: 1200px;
+	margin: auto;
+}
+
+div.info{
+	width: 800px;
+	height: 800px;
+	float:left;
+	background-color:#FFE4D9;
+}
+
+div.cred{
+	width: 1200px;
+	height: 600px;
+	float: left;
+	background-color:#FFE4D9;
+}
+
+div.fcont{
+	width: 500px;
+	margin: 0 auto;
+	padding: 50px;
+	text-align: center;
+}
+
+div.fitem{
+	margin-bottom: 20px;
+}
+
+div.contenedor{
+	width: 398px;
+	height: 600px;
+	float: right;
+	background-color: white;
+	border-radius: 20px;
+}
+div.reproductor{
+	width: 398px;
+	height: 200px;
+	float: right;
+}
+div.caja-chat{
+	width: 90%;
+	height: 465px;
+}
+
+div.datosChat{
+	width: 100%;
+	font-family: Retro Gaming;
+	color: black;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 20px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid silver;
+}
+
+div.menu1{
+	width: 100px;
+	height: 50px;
+	background-color: red;
+	position: relative;
+	float: left;
+}
+
+div.menu2{
+	width: 200px;
+	height: 50px;
+	background-color: red;
+	position: relative;
+	float: left;
+  font-family: Retro Gaming;
+}
+
+div.menu2 select {
+  display: none;
+}
+
+div.menu3{
+	width: 150px;
+	height: 50px;
+	background-color: red;
+	position: relative;
+	float: left;
+}
+
+div.menu4{
+	width: 750px;
+	height: 50px;
+	background-color: red;
+	/*position: relative;*/
+	float: right;
+}
+
+div.menu5{
+	width: 1200px;
+	height: 50px;
+	background-color: red;
+	position: relative;
+	float: left;
+}
+/***Realizado por HTCA***/

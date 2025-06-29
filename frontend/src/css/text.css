@@ -1,0 +1,94 @@
+/***HERNÁNDEZ TORRES CARLOS ADRIÁN**4CV1**17/06/2024***/
+@font-face {
+  font-family: 'Retro Gaming';
+  src: url('fonts/RetroGaming.woff2') format('woff2'),
+       url('fonts/RetroGaming.woff') format('woff'),
+       url('fonts/RetroGaming.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes logo {
+	0% {color: #FF0000;text-shadow:0 0 20px #FF5F5F,-3px 0 #4F0000, 0 3px #4F0000, 3px 0 #4F0000, 0 -3px #4F0000;}
+	7.69% {color: #FF3600;text-shadow:0 0 20px #FF925F,-3px 0 #4F1D00, 0 3px #4F1D00, 3px 0 #4F1D00, 0 -3px #4F1D00;}
+	15.38% {color: #FFE000;text-shadow:0 0 20px #FFEE5F,-3px 0 #4F4800, 0 3px #4F4800, 3px 0 #4F4800, 0 -3px #4F4800;}
+	23.07% {color: #9BFF00;text-shadow:0 0 20px #CFFF5F,-3px 0 #334F00, 0 3px #334F00, 3px 0 #334F00, 0 -3px #334F00;}
+	30.76% {color: #08FF00;text-shadow:0 0 20px #72FF5F,-3px 0 #064F00, 0 3px #064F00, 3px 0 #064F00, 0 -3px #064F00;}
+	38.45% {color: #00FFB6;text-shadow:0 0 20px #5FFFE4,-3px 0 #004F30, 0 3px #004F30, 3px 0 #004F30, 0 -3px #004F30;}
+	46.14% {color: #00DCFF;text-shadow:0 0 20px #5FEEFF,-3px 0 #00484F, 0 3px #00484F, 3px 0 #00484F, 0 -3px #00484F;}
+	53.83% {color: #003EFF;text-shadow:0 0 20px #5F9CFF,-3px 0 #00124F, 0 3px #00124F, 3px 0 #00124F, 0 -3px #00124F;}
+	61.52% {color: #3E00FF;text-shadow:0 0 20px #9C5FFF,-3px 0 #14004F, 0 3px #14004F, 3px 0 #14004F, 0 -3px #14004F;}
+	69.21% {color: #B600FF;text-shadow:0 0 20px #CF5FFF,-3px 0 #3C004F, 0 3px #3C004F, 3px 0 #3C004F, 0 -3px #3C004F;}
+	76.9% {color: #FF00E0;text-shadow:0 0 20px #FF5FE9,-3px 0 #4F0048, 0 3px #4F0048, 3px 0 #4F0048, 0 -3px #4F0048;}
+	84.59% {color: #FF0070;text-shadow:0 0 20px #FF5FAD,-3px 0 #4F0020, 0 3px #4F0020, 3px 0 #4F0020, 0 -3px #4F0020;}
+	100% {color: #FF0000;text-shadow:0 0 20px #FF5F5F,-3px 0 #4F0000, 0 3px #4F0000, 3px 0 #4F0000, 0 -3px #4F0000;} 
+}
+
+h1{
+	font-family: Retro Gaming;
+	font-weight: bold;
+	font-size: 92px;
+	text-align: center;
+	color: #FF0000;
+	text-shadow:0 0 20px #FF5F5F,-3px 0 #4F0000, 0 3px #4F0000, 3px 0 #4F0000, 0 -3px #4F0000;
+	-webkit-box-reflect: below -40px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.3));
+	animation-name: logo;
+  animation-duration: 26s;
+  animation-iteration-count: infinite;
+}
+
+h2{
+	font-family: Retro Gaming;
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+}
+
+h3{
+	font-family: Retro Gaming;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+}
+
+h4{
+	font-family: Retro Gaming;
+	font-weight: normal;
+	font-size: 16px;
+	text-align: center;
+}
+
+p{
+	font-family: Retro Gaming;
+	font-weight: normal;
+	font-size: 16px;
+	text-align: justify;
+}
+
+a{
+	font-weight: normal;
+	color: black;
+	font-size: 16px;
+	font-family: Retro Gaming;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration-line:underline;
+}
+
+dt{
+	font-family: Retro Gaming;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: justify;
+	color: #8C12FF;
+}
+
+dd{
+	font-family: Retro Gaming;
+	font-weight: normal;
+	font-size: 16px;
+	text-align: justify;
+	color: black;
+}
+/***Realizado por HTCA***/

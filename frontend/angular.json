@@ -97,6 +97,7 @@
             ],
             "styles": [
               "src/styles.scss"
+			  "src/css/style.css"
             ],
             "scripts": []
           }

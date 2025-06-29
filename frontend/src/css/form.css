@@ -1,0 +1,200 @@
+/***HERNÁNDEZ TORRES CARLOS ADRIÁN**4CV1**17/06/2024***/
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+button.menu{
+	height: 50px;
+	width: 100px;
+	background-color:red;
+	color: white;
+	border-style: none;
+	font-family: Retro Gaming;
+	float: right;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+button.menu:hover{
+	background-color:#A90000;
+}
+
+button.reg{
+	height: 50px;
+	width: 180px;
+	background-color:#0B7ECA;
+	color: white;
+	border-style: none;
+	font-family: Retro Gaming;
+	margin: auto;
+	font-size: 16px;
+	border-radius: 15px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+button.reg:hover{
+	background-color:#08588C;
+}
+
+button.eli{
+	height: 50px;
+	width: 180px;
+	background-color:red;
+	color: white;
+	border-style: none;
+	font-family: Retro Gaming;
+	margin: auto;
+	font-size: 16px;
+	border-radius: 15px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+button.eli:hover{
+	background-color:#A90000;
+}
+
+button.env{
+	height: 30px;
+	width: 350px;
+	background-color:#0B7ECA;
+	color: white;
+	border-style: none;
+	font-family: Retro Gaming;
+	margin: auto;
+	font-size: 12px;
+	border-radius: 15px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+button.env:disabled,button.env[disabled],button.env:disabled:hover,button.env[disabled]:hover{
+	height: 30px;
+	width: 350px;
+	background-color:#6FB3DF;
+	color: white;
+	border-style: none;
+	font-family: Retro Gaming;
+	margin: auto;
+	font-size: 12px;
+	border-radius: 15px;
+	margin-top: 20px;
+	cursor: not-allowed;
+}
+
+button.env:hover{
+	background-color:#08588C;
+}
+
+button.upd{
+	height: 50px;
+	width: 250px;
+	background-color:#0B7ECA;
+	color: white;
+	border-style: none;
+	font-family: Retro Gaming;
+	margin: auto;
+	font-size: 16px;
+	border-radius: 15px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+button.upd:hover{
+	background-color:#08588C;
+}
+
+.select-selected {
+  background-color: red;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 24px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 16px;
+}
+
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 14.2px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+.select-items {
+  position: absolute;
+  background-color: red;
+  top:100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: #A90000;
+}
+
+input{
+	font-family: Retro Gaming;
+	font-weight: normal;
+	font-size: 16px;
+	color:black;
+	margin: auto;
+	width: 100%;
+}
+
+label{
+	font-family: Retro Gaming;
+	font-weight: normal;
+	font-size: 16px;
+	color:black;
+	margin: auto;
+	text-align: center;
+	display: block;
+}
+
+textarea{
+	font-family: Retro Gaming;
+	color: black;
+	font-size: 12px;
+	margin-bottom: 3px;
+	border-radius: 10px;
+	border: 1px solid gray;
+	width: 350px;
+	height: 60px;
+	resize: none;
+}
+
+audio{
+	color: red;
+	width: 398px;
+	height: 50px;
+}
+
+.listacanciones{
+	position: relative;
+	width: 398px;
+	height: 150px;
+}
+.listacanciones option{
+	font-family: Retro Gaming;
+}
+/***Realizado por HTCA***/

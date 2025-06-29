@@ -1,3 +1,4 @@
+//***HERNÁNDEZ TORRES CARLOS ADRIÁN**4CV1**17/06/2024***
 var x, i, j, l, ll, selElmnt, a, b, c;
 x = document.getElementsByClassName("menu2");
 l = x.length;
@@ -41,7 +42,7 @@ for (i = 0; i < l; i++) {
                             iframe.src = 'snes.html';
                             break;
                         case 'GBA':
-                            iframe.srcf = 'gba.html';
+                            iframe.src = 'gba.html';
                             break;
                         case 'NDS':
                             iframe.src = 'nds.html';
@@ -93,3 +94,4 @@ function closeAllSelect(elmnt) {
   	}
 }
 document.addEventListener("click", closeAllSelect);
+//***Realizado por HTCA***
