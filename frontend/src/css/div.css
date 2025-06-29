@@ -100,7 +100,7 @@ div.menu3{
 }
 
 div.menu4{
-	width: 750px;
+	width: 650px;
 	height: 50px;
 	background-color: #8306a8;
 	/*position: relative;*/
@@ -111,6 +111,14 @@ div.menu5{
 	width: 1200px;
 	height: 50px;
 	background-color: #8306a8;
+	position: relative;
+	float: left;
+}
+
+div.peluche{
+	width: 190px;
+	height: 300px;
+	background-color: #FFE4D9;
 	position: relative;
 	float: left;
 }

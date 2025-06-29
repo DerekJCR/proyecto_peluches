@@ -11,6 +11,14 @@ function user() {
     var iframe = document.querySelector("iframe[name='info']");
     iframe.src = 'assets/user.php';
 }
+function productos() {
+    var iframe = document.querySelector("iframe[name='info']");
+    iframe.src = 'assets/productos.html';
+}
+function carrito() {
+    var iframe = document.querySelector("iframe[name='info']");
+    iframe.src = 'assets/carrito.html';
+}
 function index() {
     window.location.href = '/';
 }
