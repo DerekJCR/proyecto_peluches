@@ -36,14 +36,14 @@ div.chat{
 div.menu1{
 	width: 100px;
 	height: 50px;
-	background-color: red;
+	background-color: #8306a8;
 	position: relative;
 	float: left;
 }
 div.menu2{
 	width: 200px;
 	height: 50px;
-	background-color: red;
+	background-color: #8306a8;
 	position: relative;
 	float: left;
   	font-family: Retro Gaming;
@@ -54,28 +54,28 @@ div.menu2 select {
 div.menu3{
 	width: 150px;
 	height: 50px;
-	background-color: red;
+	background-color: #8306a8;
 	position: relative;
 	float: left;
 }
 div.menu4{
 	width: 750px;
 	height: 50px;
-	background-color: red;
+	background-color: #8306a8;
 	/*position: relative;*/
 	float: right;
 }
 div.menu5{
 	width: 1200px;
 	height: 50px;
-	background-color: red;
+	background-color: #8306a8;
 	position: relative;
 	float: left;
 }
 button.menu{
 	height: 50px;
 	width: 100px;
-	background-color:red;
+	background-color:#8306a8;
 	color: white;
 	border-style: none;
 	font-family: Retro Gaming;
@@ -83,10 +83,10 @@ button.menu{
 	font-size: 16px;
 }
 button.menu:hover{
-	background-color:#A90000;
+	background-color:#5b0276;
 }
 .select-selected {
-  background-color: red;
+  background-color: #8306a8;
 }
 
 /* Style the arrow inside the select element: */
@@ -119,7 +119,7 @@ button.menu:hover{
 /* Style items (options): */
 .select-items {
   position: absolute;
-  background-color: red;
+  background-color: #8306a8;
   top:100%;
   left: 0;
   right: 0;
@@ -132,7 +132,7 @@ button.menu:hover{
 }
 
 .select-items div:hover, .same-as-selected {
-  background-color: #A90000;
+  background-color: #5b0276;
 }
 
 h1{

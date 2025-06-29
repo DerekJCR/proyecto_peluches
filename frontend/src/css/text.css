@@ -1,9 +1,9 @@
 /***HERNÁNDEZ TORRES CARLOS ADRIÁN**4CV1**17/06/2024***/
 @font-face {
   font-family: 'Retro Gaming';
-  src: url('fonts/RetroGaming.woff2') format('woff2'),
-       url('fonts/RetroGaming.woff') format('woff'),
-       url('fonts/RetroGaming.ttf') format('truetype');
+  src: url('/assets/fonts/RetroGaming.woff2') format('woff2'),
+       url('/assets/fonts/RetroGaming.woff') format('woff'),
+       url('/assets/fonts/RetroGaming.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

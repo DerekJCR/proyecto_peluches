@@ -8,7 +8,7 @@ form{
 button.menu{
 	height: 50px;
 	width: 100px;
-	background-color:red;
+	background-color:#8306a8;
 	color: white;
 	border-style: none;
 	font-family: Retro Gaming;
@@ -18,7 +18,7 @@ button.menu{
 }
 
 button.menu:hover{
-	background-color:#A90000;
+	background-color:#5b0276;
 }
 
 button.reg{
@@ -42,7 +42,7 @@ button.reg:hover{
 button.eli{
 	height: 50px;
 	width: 180px;
-	background-color:red;
+	background-color:#8306a8;
 	color: white;
 	border-style: none;
 	font-family: Retro Gaming;
@@ -54,7 +54,7 @@ button.eli{
 }
 
 button.eli:hover{
-	background-color:#A90000;
+	background-color:#5b0276;
 }
 
 button.env{
@@ -108,7 +108,7 @@ button.upd:hover{
 }
 
 .select-selected {
-  background-color: red;
+  background-color: #8306a8;
 }
 
 .select-selected:after {
@@ -137,7 +137,7 @@ button.upd:hover{
 
 .select-items {
   position: absolute;
-  background-color: red;
+  background-color: #8306a8;
   top:100%;
   left: 0;
   right: 0;
@@ -149,7 +149,7 @@ button.upd:hover{
 }
 
 .select-items div:hover, .same-as-selected {
-  background-color: #A90000;
+  background-color: #5b0276;
 }
 
 input{
@@ -184,7 +184,7 @@ textarea{
 }
 
 audio{
-	color: red;
+	color: #8306a8;
 	width: 398px;
 	height: 50px;
 }

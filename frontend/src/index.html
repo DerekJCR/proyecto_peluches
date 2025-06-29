@@ -6,16 +6,16 @@
 		<title>The RetroParadise</title>
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 		<link rel="stylesheet" href="css/style.css">
 		<script src="js/botones.js" defer></script>
 		<script src="js/listamenu.js" defer></script>
 	</head>
-	<body style="background-image: url('img/fondo.jpg');">
+	<body style="background-image: url('assets/img/fondo.jpg');">
     <app-root></app-root>
 		<div class="cajamenu">
 			<div class="logo">
-				<h1>THE RETROPARADISE</h1>
+				<h1>PELUCHELANDIA</h1>
 			</div>
 			<div class="menu1">
 				<button type="button" class="menu" onclick="inicio()">Inicio</button>
@@ -34,20 +34,29 @@
 				</select>
 			</div>
 			<div class="menu3">
-				<button type="button" class="menu" style="width:150px;">Acerca De</button>
+				<button type="button" class="menu" style="width:150px;" onclick="about()">Acerca De</button>
 			</div>
 			<div class="menu4">
 				<button type="button" class="menu" style="width:170px;" onclick="registro()">Registrarse</button>
-				<button type="button" class="menu" style="width:180px;">Iniciar Sesión</button>
+                <button type="button" class="menu" style="width:180px;" onclick="login()">Iniciar Sesión</button>
 			</div>
 		</div>
 		<div class="caja">
 			<div class="info">
-				<iframe src="inicio.html" height="800" width="800" title="informacion" name="info"></iframe>
+				<iframe src="assets/inicio.html" height="800" width="800" title="informacion" name="info"></iframe>
 			</div>
-			<div class="chat">
-				
-			</div>
-		</div>			
+      <div class="reproductor" id="reproductorBox">
+        <select class="listacanciones" id = "selectTrack" multiple onchange="cambiarTrack(this.options[this.selectedIndex]);">
+				  <option value="assets/music/bestfriend.mp3" selected>Lofi - Best Friend 8 Bits</option>
+				  <option value="assets/music/roller.mp3">TechnoAXE - Roller Derby</option>
+				  <option value="assets/music/darling.mp3">Lofi - Darling, remember tomorrow</option>
+				  <option value="assets/music/upinmyjam.mp3">Kubi - Up In My Jam</option>
+				  <option value="assets/music/thewholeother.mp3">8 Bit Dreamscape - The Whole Other</option>
+			  </select>
+			  <audio id="reproductor" controls autoplay>
+        	<source src="assets/music/bestfriend.mp3" type="audio/mpeg">
+        </audio>
+      </div>	
+		</div>		
 	</body>
 </html>

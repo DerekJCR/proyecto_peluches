@@ -33,28 +33,28 @@ for (i = 0; i < l; i++) {
             		var selectedValue = s.options[i].value;
                     switch (selectedValue) {
                         case 'Emu2':
-                            iframe.src = 'emuladores.html';
+                            iframe.src = 'assets/emuladores.html';
                             break;
                         case 'NES':
-                            iframe.src = 'nes.html';
+                            iframe.src = 'assets/nes.html';
                             break;
                         case 'SNES':
-                            iframe.src = 'snes.html';
+                            iframe.src = 'assets/snes.html';
                             break;
                         case 'GBA':
-                            iframe.src = 'gba.html';
+                            iframe.src = 'assets/gba.html';
                             break;
                         case 'NDS':
-                            iframe.src = 'nds.html';
+                            iframe.src = 'assets/nds.html';
                             break;
                         case 'N3DS':
-                            iframe.src = 'n3ds.html';
+                            iframe.src = 'assets/n3ds.html';
                             break;
                         case 'PSX':
-                            iframe.src = 'psx.html';
+                            iframe.src = 'assets/psx.html';
                             break;
                         case 'PS2':
-                            iframe.src = 'ps2.html';
+                            iframe.src = 'assets/ps2.html';
                             break;
                         default:
                             break;
