@@ -29,12 +29,48 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+			  "src/assets",
+			  {
+				"glob": "**/*",
+				"input": "src/css",
+				"output": "/assets/css"
+			  },
+			  {
+				"glob": "**/*",
+				"input": "src/js",
+				"output": "/assets/js"
+			  },
+			  {
+				"glob": "**/*",
+				"input": "src/img",
+				"output": "/assets/img"
+			  },
+			  {
+				"glob": "**/*",
+				"input": "src/music",
+				"output": "/assets/music"
+			  },
+			  {
+				"glob": "**/*",
+				"input": "src/sounds",
+				"output": "/assets/sounds"
+			  }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+			  "src/css/style.css",
+			  "src/css/div.css",
+			  "src/css/form.css",
+			  "src/css/text.css"
             ],
-            "scripts": [],
+            "scripts": [
+				"src/js/botones.js",
+				"src/js/listamenu.js",
+				"src/js/registrar.js",
+				"src/js/reproductor.js",
+				"src/js/select.js"
+			],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
@@ -96,7 +132,11 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+			  "src/css/style.css",
+			  "src/css/div.css",
+			  "src/css/form.css",
+			  "src/css/text.css"
             ],
             "scripts": []
           }

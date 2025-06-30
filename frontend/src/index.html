@@ -1,13 +1,68 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Frontend</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+<!DOCTYPE html>
+<!--Elaborado por Carlos Adrian Hernandez Torres-->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Peluchelandia</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="assets/js/botones.js" defer></script>
+		<script src="assets/js/listamenu.js" defer></script>
+		<script src="assets/js/token.js" defer></script>
+	</head>
+	<body style="background-image: url('assets/img/fondo.jpg');">
+    <app-root></app-root>
+		<div class="cajamenu">
+			<div class="logo">
+				<h1>PELUCHELANDIA</h1>
+			</div>
+			<div class="menu1">
+				<button type="button" class="menu" onclick="inicio()">Inicio</button>
+			</div>
+			<div class="menu3">
+				<button type="button" class="menu" style="width:150px;" onclick="about()">Contacto</button>
+			</div>
+			<div class="menu4" id="auth-buttons">
+				<!-- Estos botones se mostrarán si el usuario no está autenticado -->
+				<button type="button" class="menu" style="width:170px;" onclick="registro()">Registrarse</button>
+				<button type="button" class="menu" style="width:180px;" onclick="login()">Iniciar Sesión</button>
+			</div>
+            <div class="menu4" id="user-buttons" style="display:none;">
+                <!-- Estos botones se mostrarán si el usuario está autenticado -->
+				<button type="button" class="menu" style="width:180px;" onclick="cerrarSesion()">Cerrar Sesión</button>
+                <button type="button" class="menu" id="user-name-button" style="width:200px;" onclick="user()"></button>
+            </div>
+			<div class="menu3" id="shop1-buttons">
+				<p> </p>
+			</div>
+			<div class="menu3" id="shop2-buttons">
+				<p> </p>
+			</div>
+      		<div class="menu3" id="shop3-buttons" style="display:none;">
+				<button type="button" class="menu" style="width:150px;" onclick="productos()">Productos</button>
+			</div>
+      		<div class="menu3" id="shop4-buttons" style="display:none;">
+				<button type="button" class="menu" style="width:150px;" onclick="carrito()">Carrito</button>
+			</div>
+		</div>
+		<div class="caja">
+			<div class="info">
+				<iframe src="assets/inicio.html" height="800" width="800" title="informacion" name="info"></iframe>
+			</div>
+      <div class="reproductor" id="reproductorBox">
+        <select class="listacanciones" id = "selectTrack" multiple onchange="cambiarTrack(this.options[this.selectedIndex]);">
+				  <option value="assets/music/bestfriend.mp3" selected>Lofi - Best Friend 8 Bits</option>
+				  <option value="assets/music/roller.mp3">TechnoAXE - Roller Derby</option>
+				  <option value="assets/music/darling.mp3">Lofi - Darling, remember tomorrow</option>
+				  <option value="assets/music/upinmyjam.mp3">Kubi - Up In My Jam</option>
+				  <option value="assets/music/thewholeother.mp3">8 Bit Dreamscape - The Whole Other</option>
+			  </select>
+			  <audio id="reproductor" controls autoplay>
+        	<source src="assets/music/bestfriend.mp3" type="audio/mpeg">
+        </audio>
+      </div>	
+		</div>		
+	</body>
 </html>

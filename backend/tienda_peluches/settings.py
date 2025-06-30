@@ -7,7 +7,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "cambia_esto_por_una_clave_segura")
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['backendrender-7dgs.onrender.com', 'localhost', '127.0.0.1']
 
 INSTALLED_APPS = [
     'corsheaders',

@@ -1,0 +1,163 @@
+div.logo {
+	width: 1200px;
+	height: 160px;
+	margin: auto;
+}
+div.cajamenu{
+	width: 1200px;
+	height: 50px;
+	margin:auto;
+}
+div.caja{
+	width: 1200px;
+	height: 1200px;
+	margin: auto;
+}
+div.info{
+	width: 800px;
+	height: 800px;
+	float:left;
+	background-color:#FFE4D9;
+}
+div.cred{
+	width: 1200px;
+	height: 12000px;
+	float:left;
+	background-color:#FFE4D9;
+}
+div.chat{
+	width: 398px;
+	height: 600px;
+	float: right;
+	border-color: green;
+	border-style: solid;
+	border-width: 1px;
+}
+div.menu1{
+	width: 100px;
+	height: 50px;
+	background-color: #8306a8;
+	position: relative;
+	float: left;
+}
+div.menu2{
+	width: 200px;
+	height: 50px;
+	background-color: #8306a8;
+	position: relative;
+	float: left;
+  	font-family: Retro Gaming;
+}
+div.menu2 select {
+  display: none; /*hide original SELECT element:*/
+}
+div.menu3{
+	width: 150px;
+	height: 50px;
+	background-color: #8306a8;
+	position: relative;
+	float: left;
+}
+div.menu4{
+	width: 750px;
+	height: 50px;
+	background-color: #8306a8;
+	/*position: relative;*/
+	float: right;
+}
+div.menu5{
+	width: 1200px;
+	height: 50px;
+	background-color: #8306a8;
+	position: relative;
+	float: left;
+}
+button.menu{
+	height: 50px;
+	width: 100px;
+	background-color:#8306a8;
+	color: white;
+	border-style: none;
+	font-family: Retro Gaming;
+	float: right;
+	font-size: 16px;
+}
+button.menu:hover{
+	background-color:#5b0276;
+}
+.select-selected {
+  background-color: #8306a8;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 24px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 16px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 14.2px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #8306a8;
+  top:100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: #5b0276;
+}
+
+h1{
+	font-family: Retro Gaming;
+	font-weight: bold;
+	font-size: 92px;
+	text-align: center;
+	color: #FF0000;
+	text-shadow:0 0 20px #FF5F5F,-3px 0 #4F0000, 0 3px #4F0000, 3px 0 #4F0000, 0 -3px #4F0000;
+	-webkit-box-reflect: below -40px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.3));
+}
+h2{
+	font-family: Retro Gaming;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+}
+p{
+	font-family: Retro Gaming;
+	font-weight: normal;
+}
+a{
+	font-weight: normal;
+	color: white;
+	font-size: 16px;
+	font-family: Retro Gaming;
+	text-decoration: none;
+}
