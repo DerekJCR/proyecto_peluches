@@ -24,7 +24,7 @@
 		<div class="cred">
 			<div class="fcont">
 				<h2>REGISTRARSE</h2>
-				<form method="post" action="registro.php" onsubmit="return validarFormulario()">
+				<form onsubmit="return validarFormulario(event)">
 					<div class="fitem">
 						<label for="usuario">Usuario</label>
         				<input type="text" id="usuario" name="usuario" minlength="6" maxlength="16">
@@ -45,6 +45,6 @@
     			</form>
     		</div>
 		</div>
-	</div>			
+	</div>
 </body>
 </html>

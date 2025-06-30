@@ -1,9 +1,13 @@
-//***HERNÁNDEZ TORRES CARLOS ADRIÁN**4CV1**17/06/2024***
-function validarFormulario() {
+function validarFormulario(event) {
+    event.preventDefault(); // Evita el envío tradicional del formulario
+
     var username = document.getElementById("usuario").value;
     var email = document.getElementById("correo").value;
     var password = document.getElementById("contrasena").value;
-    if (username.length < 5) {
+    var telefono = document.getElementById("tel").value;
+
+    // Validación de los campos
+    if (username.length < 6) {
         alert("Introduzca un nombre de usuario de al menos 6 caracteres.");
         return false;
     } 
@@ -11,42 +15,48 @@ function validarFormulario() {
         alert("Introduzca una dirección de correo electrónico válida");
         return false;
     }
-    if (password.length < 7) {
+    if (password.length < 8) {
         alert("Introduzca una contraseña de al menos 8 caracteres.");
         return false;
     }
-    return true;
-}
-function validarUser() {
-    var username = document.getElementById("new_usuario").value;
-    if (username.length < 5) {
-        alert("Introduzca un nombre de usuario de al menos 6 caracteres.");
+    if (telefono.length < 10 ) {
+        alert("Introduzca un teléfono válido.");
         return false;
     }
-    else{
-        return confirm('¿Estás seguro que deseas cambiar tu Nombre de Usuario?');
-    }
-    
-}
-function validarContrasena() {
-    var password = document.getElementById("new_password").value;
-    if (password.length < 7) {
-        alert("Introduzca una contraseña de al menos 8 caracteres.");
-        return false;
-    }
-    return true;
-}
-function validarCorreo() {
-    var email = document.getElementById("new_correo").value;
-    if (!validarEmail(email)) {
-        alert("Introduzca una dirección de correo electrónico válida");
-        return false;
-    }
-    return true;
+
+    // Crear el objeto con los datos para enviar
+    const datos = {
+        usuario: username,
+        correo: email,
+        contrasena: password,
+        telefono: telefono
+    };
+
+    // Enviar los datos al backend de Django usando fetch
+    fetch('http://localhost:8000/api/clientes/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(datos),
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data) {
+            alert("¡Registro exitoso!");
+            window.location.href = '/';
+        }
+    })
+    .catch(error => {
+        console.error('Error al registrar:', error);
+        alert("Hubo un error al registrar el usuario. Intenta nuevamente.");
+    });
+
+    return false; // Evitar que el formulario se envíe de manera tradicional
 }
 
 function validarEmail(email) {
     var re = /\S+@\S+\.\S+/;
     return re.test(email);
 }
-//***Realizado por HTCA***
+
