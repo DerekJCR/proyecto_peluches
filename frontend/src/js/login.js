@@ -22,7 +22,7 @@ function validarFormulario(event) {
     };
 
     // Enviar los datos al backend de Django usando fetch
-    fetch('http://localhost:8000/api/login/', {  // Ajusta la URL según la API en Django
+    fetch('https://backendrender-7dgs.onrender.com/api/login/', {  // Ajusta la URL según la API en Django
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

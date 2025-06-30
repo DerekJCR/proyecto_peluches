@@ -1,5 +1,5 @@
 const SUPABASE_URL = 'https://qvqpeccncxkkeaxiaphv.supabase.co';
-const SUPABASE_API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF2cXBlY2NuY3hra2VheGlhcGh2Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MDc5MTQyNCwiZXhwIjoyMDY2MzY3NDI0fQ.0K8q_VBySRCbUAGwQOdTR-LfS65DnC139NTlSl9uhso';
+const SUPABASE_API_KEY = 'a';
 
 // Recuperar los datos almacenados en localStorage
 window.onload = function() {

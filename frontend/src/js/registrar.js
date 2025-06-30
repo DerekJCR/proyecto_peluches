@@ -34,7 +34,7 @@ function validarFormulario(event) {
     console.log("Datos a enviar:", datos);
 
     // Enviar los datos al backend de Django usando fetch
-    fetch('https://backendrender-7dgs.onrender.com', {
+    fetch('https://backendrender-7dgs.onrender.com/api/clientes/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
