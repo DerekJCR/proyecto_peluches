@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 		<link rel="stylesheet" href="css/style.css">
-		<script src="js/botones.js" defer></script>
-		<script src="js/listamenu.js" defer></script>
+		<script src="assets/js/botones.js" defer></script>
+		<script src="assets/js/listamenu.js" defer></script>
+		<script src="assets/js/token.js" defer></script>
 	</head>
 	<body style="background-image: url('assets/img/fondo.jpg');">
     <app-root></app-root>
@@ -23,14 +24,26 @@
 			<div class="menu3">
 				<button type="button" class="menu" style="width:150px;" onclick="about()">Contacto</button>
 			</div>
-			<div class="menu4">
+			<div class="menu4" id="auth-buttons">
+				<!-- Estos botones se mostrarán si el usuario no está autenticado -->
 				<button type="button" class="menu" style="width:170px;" onclick="registro()">Registrarse</button>
-                <button type="button" class="menu" style="width:180px;" onclick="login()">Iniciar Sesión</button>
+				<button type="button" class="menu" style="width:180px;" onclick="login()">Iniciar Sesión</button>
 			</div>
-      <div class="menu3">
+            <div class="menu4" id="user-buttons" style="display:none;">
+                <!-- Estos botones se mostrarán si el usuario está autenticado -->
+				<button type="button" class="menu" style="width:180px;" onclick="cerrarSesion()">Cerrar Sesión</button>
+                <button type="button" class="menu" id="user-name-button" style="width:200px;" onclick="user()"></button>
+            </div>
+			<div class="menu3" id="shop1-buttons">
+				<p> </p>
+			</div>
+			<div class="menu3" id="shop2-buttons">
+				<p> </p>
+			</div>
+      		<div class="menu3" id="shop3-buttons" style="display:none;">
 				<button type="button" class="menu" style="width:150px;" onclick="productos()">Productos</button>
 			</div>
-      <div class="menu3">
+      		<div class="menu3" id="shop4-buttons" style="display:none;">
 				<button type="button" class="menu" style="width:150px;" onclick="carrito()">Carrito</button>
 			</div>
 		</div>

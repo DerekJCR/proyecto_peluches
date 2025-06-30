@@ -66,7 +66,6 @@
             ],
             "scripts": [
 				"src/js/botones.js",
-				"src/js/chat.js",
 				"src/js/listamenu.js",
 				"src/js/registrar.js",
 				"src/js/reproductor.js",

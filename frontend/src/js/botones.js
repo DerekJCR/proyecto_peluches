@@ -9,7 +9,7 @@ function about() {
 }
 function user() {
     var iframe = document.querySelector("iframe[name='info']");
-    iframe.src = 'assets/user.php';
+    iframe.src = 'assets/user.html';
 }
 function productos() {
     var iframe = document.querySelector("iframe[name='info']");

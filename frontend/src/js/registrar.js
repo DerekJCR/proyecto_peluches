@@ -1,21 +1,21 @@
 function validarFormulario(event) {
     event.preventDefault(); // Evita el envío tradicional del formulario
 
-    var username = document.getElementById("usuario").value;
-    var email = document.getElementById("correo").value;
-    var password = document.getElementById("contrasena").value;
-    var telefono = document.getElementById("tel").value;
+    var nombre = document.getElementById("nombre").value;
+    var correo = document.getElementById("correo").value;
+    var contraseña = document.getElementById("contraseña").value;
+    var telefono = document.getElementById("telefono").value;
 
     // Validación de los campos
-    if (username.length < 6) {
+    if (nombre.length < 6) {
         alert("Introduzca un nombre de usuario de al menos 6 caracteres.");
         return false;
     } 
-    if (!validarEmail(email)) {
+    if (!validarEmail(correo)) {
         alert("Introduzca una dirección de correo electrónico válida");
         return false;
     }
-    if (password.length < 8) {
+    if (contraseña.length < 8) {
         alert("Introduzca una contraseña de al menos 8 caracteres.");
         return false;
     }
@@ -26,11 +26,12 @@ function validarFormulario(event) {
 
     // Crear el objeto con los datos para enviar
     const datos = {
-        usuario: username,
-        correo: email,
-        contrasena: password,
+        nombre: nombre,
+        correo: correo,
+        contraseña: contraseña,
         telefono: telefono
     };
+    console.log("Datos a enviar:", datos);
 
     // Enviar los datos al backend de Django usando fetch
     fetch('http://localhost:8000/api/clientes/', {
