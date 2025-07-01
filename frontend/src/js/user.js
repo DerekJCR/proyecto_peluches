@@ -255,8 +255,8 @@ document.getElementById("formCorreo").addEventListener("submit", function (event
     const destino = document.getElementById("email_destiny").value;
     const mensaje = document.getElementById("new_email").value;
 
-    //fetch('https://backendrender-7dgs.onrender.com/api/enviar-correo/', {
-    fetch('http://127.0.0.1:8000/api/enviar-correo/', {
+    fetch('https://backendrender-7dgs.onrender.com/api/enviar-correo/', {
+    //fetch('http://127.0.0.1:8000/api/enviar-correo/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
