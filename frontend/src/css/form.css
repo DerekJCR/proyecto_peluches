@@ -59,7 +59,7 @@ button.add:hover{
 button.eli{
 	height: 50px;
 	width: 180px;
-	background-color:#8306a8;
+	background-color:red;
 	color: white;
 	border-style: none;
 	font-family: Retro Gaming;
@@ -71,7 +71,7 @@ button.eli{
 }
 
 button.eli:hover{
-	background-color:#5b0276;
+	background-color:#af0000;
 }
 
 button.env{

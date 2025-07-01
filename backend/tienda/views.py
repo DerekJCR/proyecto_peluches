@@ -11,6 +11,9 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.db import connection
+from django.core.mail import send_mail
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 
 SUPABASE_URL = 'https://qvqpeccncxkkeaxiaphv.supabase.co'
 SUPABASE_API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF2cXBlY2NuY3hra2VheGlhcGh2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA3OTE0MjQsImV4cCI6MjA2NjM2NzQyNH0.F6uQp3fozGZu6z4ESwNan_9E-jzEDESod3watQqmiEM'
@@ -80,3 +83,23 @@ class LoginView(APIView):
 
         except Exception as e:
             return Response({'error': f'Error en la autenticación: {str(e)}'}, status=400)
+
+@api_view(['POST'])
+def enviar_correo(request):
+    destino = request.data.get('destino')
+    mensaje = request.data.get('mensaje')
+
+    if not destino or not mensaje:
+        return Response({'error': 'Faltan campos'}, status=400)
+
+    try:
+        send_mail(
+            subject='Mensaje de Peluchelandia',
+            message=mensaje,
+            from_email='hernandeztorresca12@gmail.com',  # Cambia por un remitente válido
+            recipient_list=[destino],
+            fail_silently=False,
+        )
+        return Response({'success': 'Correo enviado'})
+    except Exception as e:
+        return Response({'error': str(e)}, status=500)

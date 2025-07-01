@@ -5,11 +5,20 @@
 	<link rel="stylesheet" href="css/text.css">
     <link rel="stylesheet" href="css/div.css">
     <link rel="stylesheet" href="css/form.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.21/jspdf.plugin.autotable.min.js"></script>
+	<script src="js/carrito.js" defer></script>
 </head>
 <body>
 	<div width="800" height="800" style="background-color:#FFE4D9;" style="margin:auto;">
 		<h3 style="color: #125DFF;">CARRITO</h3>
-		<h4>El carrito está vacio.</h4>
-	</div>	
+		<div id="carrito-container"></div>
+		<h4 id="mensaje-vacio" style="display:none;">El carrito está vacio.</h4>
+		<div class="fcont">
+		<button type="submit" class="upd" name="buy">Realizar Compra</button>
+		<button type="submit" class="eli" name="delete">Vaciar Carrito</button>
+		</div>
+	</div>
+	
 </body>
 </html>
